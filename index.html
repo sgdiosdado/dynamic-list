@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dynamic calculator</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+  <main class="main">
+    <h1>Dynamic calculator</h1> 
+
+    <h2>Add new item</h2>
+    <section class="inputs">
+      <label
+        for="name"
+        id="nameField"
+        class="field">
+        Name:
+        <input
+          type="text"
+          name="name"
+          id="name"
+          class="input"
+          placeholder="Item">
+      </label>
+      <label
+        for="price"
+        id="priceField"
+        class="field">
+        Price:
+        <input
+          type="number"
+          name="price"
+          id="price"
+          class="input"
+          placeholder="99.00">
+      </label>
+      <div class="controls">
+        <button id="add" class="button">+ Add</button>
+        <p>Total: $<span id="total">0<span> MXN</p>
+      </div>
+    </section>
+
+    <section>
+      <h2>Items:</h2>
+      <ul id="list">
+      </ul>
+    </section>
+  </main>
+
+  <script src="./main.js"></script>
+</body>
+</html>
